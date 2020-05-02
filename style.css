@@ -1,0 +1,68 @@
+/*Colors */
+/* #6da741 - green for hover over buttons - one section green */
+/* #35b9ab -light blue for text */
+/* #878787 - light grey for text */
+/* #3e5662 - light darker grey for text */
+/* #FFFFFF - white for headers and text*/
+
+/* #173f4f - dark blue for background */
+/* #4bb678 - green for background */
+/* #f6f6f6 - off white for background */
+/* Triangle at the bottom is an image of color - #173f4f - dark blue for background */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #173f4f;
+    padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: #6da741;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    transition: .3s;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
