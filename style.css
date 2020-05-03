@@ -31,7 +31,8 @@ h3 {
 }
 
 h4 {
-    margin: 0px 0px 5px;
+    padding: 0px 0px 5px;
+    margin: 0px;
 }
 p {
     margin: 0px 0px 10px;
@@ -53,13 +54,13 @@ p {
 
 /********** Start Header **********/
 
-.header {
+.navigation {
     overflow: hidden;
     background-color: #173f4f;
     padding: 20px 10px;
 }
 
-.header a {
+.navigation a {
     float: left;
     color: #35b9ab;
     text-align: center;
@@ -69,19 +70,19 @@ p {
     line-height: 25px;
 }
 
-.header a.logo {
+.navigation a.logo {
     font-size: 25px;
     font-weight: bold;
     color: #FFFFFF;
 }
 
-.header a:hover {
+.navigation a:hover {
     color: #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
     transition: .3s;
 }
 
-.header a.active {
+.navigation a.active {
     background-color: dodgerblue;
     color: white;
 }
@@ -169,6 +170,13 @@ p {
     background-color: #f6f6f6;
     color: #173f4f;
     padding-top: 70px;
+    text-align: center;
+}
+
+.about-text, 
+.about-content {
+    background-color: #f6f6f6;
+
 }
 
 .about-titles h3 {
@@ -177,6 +185,7 @@ p {
 
 ul {
     margin: 0;
+    padding-left: 22px;
 }
 
 .about ul {
@@ -185,12 +194,10 @@ ul {
 
 .about-list-image {
     height: 100px;
-    border: 2px blue solid;
 
 }
 
 .about-list-text {
-    border: 2px red solid;
 }
 
 .about-content ul li {
@@ -198,16 +205,52 @@ ul {
     display: flex;
 }
 
-
-
 @media (min-width: 992px) {
     .about-content {
         width: 50%;
         float: left;
     }  
 } 
-
-
 /********** End about **********/
+/********** Start table **********/
+
+table {
+    color: #FFFFFF;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.blue {
+    background: #173f4f;
+}
+
+tr,
+th,
+td {
+    padding: 5px;
+    width: 50%;
+}
+
+th {
+    text-align: left;
+    color: #35b9ab;
+}
+
+td:first-child {
+    color: #4bb678;
+
+}
+/********** End table **********/
+
+
+
+
+
+
+
+
+
 
 
