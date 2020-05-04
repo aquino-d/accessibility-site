@@ -176,11 +176,15 @@ p {
 .about-text, 
 .about-content {
     background-color: #f6f6f6;
+}
 
+.about-titles {
+    padding-bottom: 5em;
 }
 
 .about-titles h3 {
-    margin-top: 20px 0 10px;
+    margin: 20px 0 10px;
+    
 }
 
 ul {
