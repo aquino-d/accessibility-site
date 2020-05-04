@@ -18,6 +18,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     color: white;
+    background-color: #f6f6f6;
 }
 
 /********** Start Re-usable **********/
@@ -260,10 +261,6 @@ td:first-child {
         height: 300px;
     }
 }
-
-
-
-
 
 
 @media (min-width: 992px) {
