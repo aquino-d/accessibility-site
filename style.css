@@ -91,21 +91,7 @@ p {
     float: right;
 }
 
-    /* Start - Media Queries - Header */
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
-
-    /* End - Media Queries - Header */
 /********** End Header **********/
 
 /********** Start general-info **********/
@@ -190,6 +176,7 @@ p {
 ul {
     margin: 0;
     padding-left: 22px;
+    padding-right: 22px;
 }
 
 .about ul {
@@ -209,12 +196,7 @@ ul {
     display: flex;
 }
 
-@media (min-width: 992px) {
-    .about-content {
-        width: 50%;
-        float: left;
-    }  
-} 
+
 /********** End about **********/
 /********** Start table **********/
 
@@ -249,6 +231,49 @@ td:first-child {
 /********** End table **********/
 
 
+    /* Start - Media Queries - Header */
+
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+    
+    .notes-content img {
+        height: 135px;
+    }  
+    
+    .about-content ul li {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-content ul li {
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .about-content {
+        width: 50%;
+        float: left;
+    }
+} 
+
+    /* End - Media Queries - Header */
 
 
 
